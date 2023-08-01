@@ -1,20 +1,14 @@
+import React from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { SafeAreaView } from 'react-native';
+
+import Cesta from "./src/pages/Cesta";
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Olá, mundo!</Text>
+    <SafeAreaView>
       <StatusBar style="auto" />
-    </View>
+      <Cesta/>
+    </SafeAreaView>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
