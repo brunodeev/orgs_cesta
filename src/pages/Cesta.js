@@ -11,15 +11,15 @@ export default function Cesta(){
     return (
         <View>
             <Image source={topo} style={styles.image} />
-            <Text style={styles.title}>Detalhes da Cesta</Text>
+            <TextNormal style={styles.title}>Detalhes da Cesta</TextNormal>
             <View style={styles.container}>
-                <Text style={styles.name}>Cesta de Verduras</Text>
+                <TextNormal style={styles.name}>Cesta de Verduras</TextNormal>
                 <View style={styles.farm}>
                     <Image style={styles.farmImage} source={logo} />
-                    <Text style={styles.farmName}>Jennya Jack Farm</Text>
+                    <TextNormal style={styles.farmName}>Jennya Jack Farm</TextNormal>
                 </View>
                 <TextNormal style={styles.description}>Uma cesta com produtos selecionados cuidadosamente da fazenda direto para sua cozinha</TextNormal>
-                <Text style={styles.price}>R$ 40,00</Text>
+                <TextNormal style={styles.price}>R$ 40,00</TextNormal>
             </View>
         </View>
     );
