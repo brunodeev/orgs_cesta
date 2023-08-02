@@ -1,6 +1,7 @@
 import React from "react";
 import { StyleSheet, Image, Dimensions, Text, View } from "react-native";
 
+import TextNormal from '../components/TextNormal';
 import topo from "../../assets/topo.png";
 import logo from '../../assets/logo.png';
 
@@ -17,7 +18,7 @@ export default function Cesta(){
                     <Image style={styles.farmImage} source={logo} />
                     <Text style={styles.farmName}>Jennya Jack Farm</Text>
                 </View>
-                <Text style={styles.description}>Uma cesta com produtos selecionados cuidadosamente da fazenda direto para sua cozinha</Text>
+                <TextNormal style={styles.description}>Uma cesta com produtos selecionados cuidadosamente da fazenda direto para sua cozinha</TextNormal>
                 <Text style={styles.price}>R$ 40,00</Text>
             </View>
         </View>
@@ -39,7 +40,6 @@ const styles = StyleSheet.create({
         color: 'white',
         fontWeight: 'bold',
         padding: 16,
-        fontFamily: 'InterBold',
     },
     container: {
         paddingVertical: 8,
@@ -50,7 +50,6 @@ const styles = StyleSheet.create({
         color: '#464646',
         lineHeight: 42,
         fontWeight: 'bold',
-        fontFamily: 'InterBold',
     },
     farm: {
         flexDirection: 'row',
@@ -64,18 +63,15 @@ const styles = StyleSheet.create({
         fontSize: 16,
         lineHeight: 26,
         paddingLeft: 12,
-        fontFamily: 'InterRegular',
     },
     description: {
         color: '#A3A3A3',
         fontSize: 16,
-        lineHeight: 26,
-        fontFamily: 'InterRegular',
+        lineHeight: 26
     },
     price: {
         color: '#2A9F85',
         fontWeight: 'bold',
-        fontFamily: 'InterBold',
         fontSize: 26,
         lineHeight: 42,
         marginTop: 8,
