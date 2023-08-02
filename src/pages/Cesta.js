@@ -39,6 +39,7 @@ const styles = StyleSheet.create({
         color: 'white',
         fontWeight: 'bold',
         padding: 16,
+        fontFamily: 'InterBold',
     },
     container: {
         paddingVertical: 8,
@@ -49,6 +50,7 @@ const styles = StyleSheet.create({
         color: '#464646',
         lineHeight: 42,
         fontWeight: 'bold',
+        fontFamily: 'InterBold',
     },
     farm: {
         flexDirection: 'row',
@@ -62,15 +64,18 @@ const styles = StyleSheet.create({
         fontSize: 16,
         lineHeight: 26,
         paddingLeft: 12,
+        fontFamily: 'InterRegular',
     },
     description: {
         color: '#A3A3A3',
         fontSize: 16,
         lineHeight: 26,
+        fontFamily: 'InterRegular',
     },
     price: {
         color: '#2A9F85',
         fontWeight: 'bold',
+        fontFamily: 'InterBold',
         fontSize: 26,
         lineHeight: 42,
         marginTop: 8,
