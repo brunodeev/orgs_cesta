@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text } from 'react-native';
 
-export default function TextNormal({children, style}){
+export default function DefaultText({children, style}){
 
     let styleMode = styles.text;
 
