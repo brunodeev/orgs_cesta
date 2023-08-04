@@ -1,9 +1,10 @@
 import React from 'react';
-import { StyleSheet, View, Image } from 'react-native';
+import { StyleSheet, View, Image, Text, TouchableOpacity } from 'react-native';
 
 import DefaultText from '../../../components/DefaultText';
+import DefaultButton from '../../../components/DefaultButton';
 
-export default function Details({ name, farmName, farmImage, description, price }){
+export default function Details({ name, farmName, farmImage, description, price, button }){
     return (
         <View>
             <DefaultText style={styles.name}>{name}</DefaultText>
@@ -13,6 +14,7 @@ export default function Details({ name, farmName, farmImage, description, price 
             </View>
             <DefaultText style={styles.description}>{description}</DefaultText>
             <DefaultText style={styles.price}>{price}</DefaultText>
+            <DefaultButton button={button} action={() => {}}/>
         </View>
     );
 }

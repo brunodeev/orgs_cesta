@@ -10,6 +10,7 @@ const cesta = {
         farmImage: logo,
         description: 'Uma cesta com produtos selecionados cuidadosamente da fazenda direto para sua cozinha',
         price: 'R$ 82,90',
+        button: 'Comprar',
     },
 };
 

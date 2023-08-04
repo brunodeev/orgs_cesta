@@ -5,7 +5,7 @@ import { SafeAreaView, View } from 'react-native';
 import { useFonts, Inter_400Regular, Inter_700Bold } from '@expo-google-fonts/inter';
 import * as SplashScreen from 'expo-splash-screen';
 
-import Cesta from './src/pages/Cesta';
+import Cesta from './src/pages/Basket';
 import mock from './src/mocks/cesta';
 
 export default function App() {
