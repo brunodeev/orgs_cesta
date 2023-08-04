@@ -6,11 +6,11 @@ import DefaultText from '../../../components/DefaultText';
 
 const width = Dimensions.get('screen').width;
 
-export default function Top(){
+export default function Top({ title }){
     return (
         <View>
             <Image source={topo} style={styles.image} />
-            <DefaultText style={styles.title}>Detalhes da Cesta</DefaultText>
+            <DefaultText style={styles.title}>{title}</DefaultText>
         </View>
     );
 }

@@ -4,12 +4,12 @@ import { StyleSheet, View } from 'react-native';
 import Top from './components/Top';
 import Details from './components/Details';
 
-export default function Cesta(){
+export default function Cesta({top, details}){
     return (
         <View>
-            <Top styles={styles}/>
+            <Top {...top}/>     
             <View style={styles.container}>
-                <Details/>
+                <Details {...details}/>
             </View>
         </View>
     );

@@ -2,18 +2,17 @@ import React from 'react';
 import { StyleSheet, View, Image } from 'react-native';
 
 import DefaultText from '../../../components/DefaultText';
-import logo from '../../../../assets/logo.png';
 
-export default function Details(){
+export default function Details({ name, farmName, farmImage, description, price }){
     return (
         <View>
-            <DefaultText style={styles.name}>Cesta de Verduras</DefaultText>
+            <DefaultText style={styles.name}>{name}</DefaultText>
             <View style={styles.farm}>
-                <Image style={styles.farmImage} source={logo} />
-                <DefaultText style={styles.farmName}>Jennya Jack Farm</DefaultText>
+                <Image style={styles.farmImage} source={farmImage} />
+                <DefaultText style={styles.farmName}>{farmName}</DefaultText>
             </View>
-            <DefaultText style={styles.description}>Uma cesta com produtos selecionados cuidadosamente da fazenda direto para sua cozinha</DefaultText>
-            <DefaultText style={styles.price}>R$ 40,00</DefaultText>
+            <DefaultText style={styles.description}>{description}</DefaultText>
+            <DefaultText style={styles.price}>{price}</DefaultText>
         </View>
     );
 }
