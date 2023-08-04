@@ -1,17 +1,19 @@
 import React from 'react';
-import { StyleSheet, View } from 'react-native';
+import { ScrollView, StyleSheet, View } from 'react-native';
 
 import Top from './components/Top';
 import Details from './components/Details';
+import Items from './components/Items';
 
-export default function Cesta({top, details}){
+export default function Cesta({ top, details, items }){
     return (
-        <View>
+        <ScrollView>
             <Top {...top}/>     
             <View style={styles.container}>
                 <Details {...details}/>
+                <Items {...items} />
             </View>
-        </View>
+        </ScrollView>
     );
 }
 
